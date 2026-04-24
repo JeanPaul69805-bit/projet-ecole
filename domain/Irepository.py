@@ -31,6 +31,10 @@ class ILivreurRepository(ABC):
     def get_by_id(self, livreur_id: int) -> Optional[Livreur]:
         pass
 
+    @abstractmethod
+    def update_disponibilite(self, livreur_id: int, disponible: bool) -> None:
+        pass
+
 
 #Les contraaat s du colis
 class IColisRepository(ABC):
