@@ -37,6 +37,7 @@ class ColisModel(models.Model):
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='PENDING')
     client = models.ForeignKey(ClientModel, on_delete=models.CASCADE, related_name='colis')
     livreur = models.ForeignKey(LivreurModel, on_delete=models.SET_NULL, null=True, blank=True)
+    date_creation = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
         return f"Colis {self.id} - {self.statut}"
