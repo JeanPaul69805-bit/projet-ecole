@@ -12,7 +12,6 @@ class ClientSerializer(serializers.Serializer):
 class LivreurSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     nom = serializers.CharField(max_length=255)
-    telephone = serializers.CharField(max_length=20)
     vehicule = serializers.CharField(max_length=100)
     disponible = serializers.BooleanField(default=True)
 

@@ -74,12 +74,11 @@ python manage.py runserver
 ***Giles***
 ****
 4. Module "Affectation & Logique" 
-    Affectation manuelle : Une route pour l'admin qui permet de choisir un livreur spécifique pour un colis spécifique.
+    Un livreur spécifique qui valide une livraison d'un colis spécifique.
     Listing des colis par statut : Voir tous les colis "En attente", "En cours" ou "Livrés".
     Vérification de règle métier : Empêcher d'affecter un livreur s'il est déjà "Indisponible".
     Mise à jour du statut : Le livreur confirme qu'il a récupéré le colis (statut passe à IN_PROGRESS) puis qu'il l'a livré (DELIVERED).
-    Vérification de règle métier : Empêcher d'affecter un livreur s'il est déjà "Indisponible".
-    Gestion de la disponibilité : Créer une route permettant à un livreur de passer son statut à "Disponible" ou "Indisponible" (On-duty/Off-duty).
+    Vérification de règle métier : Empêcher q'un livreur prenne une livraison s'il est déjà "Indisponible".
     
 
 
