@@ -10,7 +10,7 @@ Suivez ces étapes pour configurer le projet sur votre machine locale :
 
 1. **Cloner le projet**
    ```bash
-   git clone url du projet créer par jp
+   git clone url du projet créer par https://github.com/JeanPaul69805-bit/projet-ecole.git
    cd app_Livraison
    ```
 
