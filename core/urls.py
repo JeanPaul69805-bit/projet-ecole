@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from interfaces.views import RecupererColisView, FinaliserLivraisonView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/colis/<int:colis_id>/recuperer/', RecupererColisView.as_view(), name='recuperer-colis'),
+    path('api/colis/<int:colis_id>/finaliser/', FinaliserLivraisonView.as_view(), name='finaliser-livraison'),
 ]
+
+
